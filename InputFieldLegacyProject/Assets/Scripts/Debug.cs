@@ -5,10 +5,12 @@ using UnityEngine.UI;
 public class Debug : MonoBehaviour
 {
     public Text _msgText;
+    public InputField _InputField;
     
     private void OnApplicationPause(bool pauseStatus)
     {
         _msgText.text = pauseStatus ? $"The Application is: {pauseStatus.ToString()}" : "No application pause.";
+        
     }
 
     private void OnApplicationFocus(bool hasFocus)
