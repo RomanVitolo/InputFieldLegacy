@@ -1,11 +1,12 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Debug : MonoBehaviour
 {
-    public Text _msgText;
-    public InputField _InputField;
+    public TextMeshProUGUI _msgText;
+    public TMP_InputField _InputField;
     
     private void OnApplicationPause(bool pauseStatus)
     {
